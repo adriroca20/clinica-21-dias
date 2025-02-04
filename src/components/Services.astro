@@ -2,37 +2,45 @@
 const services = [
   {
     title: "Terapia Individual",
-    description: "Sesiones personalizadas adaptadas a tus necesidades específicas",
-    icon: "👤"
+    description:
+      "Sesiones personalizadas adaptadas a tus necesidades específicas",
+    icon: "👤",
   },
   {
     title: "Terapia de Pareja",
     description: "Mejora tu relación y fortalece los vínculos afectivos",
-    icon: "💑"
+    icon: "💑",
   },
   {
     title: "Terapia Familiar",
     description: "Resuelve conflictos y mejora la comunicación familiar",
-    icon: "👨‍👩‍👧‍👦"
+    icon: "👨‍👩‍👧‍👦",
   },
   {
     title: "Mindfulness",
     description: "Aprende técnicas de atención plena y reducción del estrés",
-    icon: "🧘‍♀️"
-  }
+    icon: "🧘‍♀️",
+  },
 ];
 ---
-<section class="py-20 bg-white" id="servicios">
-  <div class="container mx-auto px-4">
-    <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Nuestros Servicios</h2>
+
+<section class="py-20" id="servicios">
+  <div class="mx-auto">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+      Nuestros <span class="text-primary-500">Servicios</span>
+    </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-      {services.map(service => (
-        <div class="bg-purple-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
-          <div class="text-4xl mb-4">{service.icon}</div>
-          <h3 class="text-xl font-semibold text-gray-800 mb-3">{service.title}</h3>
-          <p class="text-gray-600">{service.description}</p>
-        </div>
-      ))}
+      {
+        services.map((service) => (
+          <div class="bg-purple-50 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
+            <div class="text-4xl mb-4">{service.icon}</div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">
+              {service.title}
+            </h3>
+            <p class="text-gray-600">{service.description}</p>
+          </div>
+        ))
+      }
     </div>
   </div>
 </section>

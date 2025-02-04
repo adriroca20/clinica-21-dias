@@ -1,0 +1,129 @@
+<header
+  class="fixed w-full z-50 top-0 bg-white/80 backdrop-blur-sm px-4 md:px-8 lg:px-16 xl:px-32 py-4"
+>
+  <nav class="flex items-center justify-between">
+
+    <a href="/" class="flex items-center gap-4">
+      <img
+        src="/logo.jpg"
+        alt="21 días - Clínica de Psicología"
+        class="h-12 w-auto rounded-full"
+      />
+      <span class="text-primary-500 text-2xl font-bold">Clínica 21 días</span>
+    </a>
+
+    <!-- Enlaces de navegación -->
+    <div class="hidden md:flex space-x-8">
+      <a
+        href="#inicio"
+        class="relative text-gray-600 text-xl hover:text-gray-900 transition-colors after:absolute after:block after:w-full after:h-[2px] after:bottom-0 after:left-0 after:bg-primary-400 after:scale-x-0 after:origin-right after:transition-transform hover:after:scale-x-100 hover:after:origin-left"
+        >Inicio</a
+      >
+
+      <a
+        href="#nuestros-servicios"
+        class="relative text-gray-600 text-xl hover:text-gray-900 transition-colors after:absolute after:block after:w-full after:h-[2px] after:bottom-0 after:left-0 after:bg-primary-400 after:scale-x-0 after:origin-right after:transition-transform hover:after:scale-x-100 hover:after:origin-left"
+
+        >Nuestros Servicios</a
+      >
+
+      <a
+        href="#opiniones"
+        class="relative text-gray-600 text-xl hover:text-gray-900 transition-colors after:absolute after:block after:w-full after:h-[2px] after:bottom-0 after:left-0 after:bg-primary-400 after:scale-x-0 after:origin-right after:transition-transform hover:after:scale-x-100 hover:after:origin-left"
+        >Opiniones</a
+
+      >
+      <a
+        href="#contacto"
+        class="relative text-gray-600 text-xl hover:text-gray-900 transition-colors after:absolute after:block after:w-full after:h-[2px] after:bottom-0 after:left-0 after:bg-primary-400 after:scale-x-0 after:origin-right after:transition-transform hover:after:scale-x-100 hover:after:origin-left"
+        >Contacto</a
+
+      >
+    </div>
+
+    <!-- Menú móvil (hamburguesa) -->
+    <button
+      id="menu-toggle"
+      class="md:hidden text-gray-600 hover:text-gray-900"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+
+    <!-- Menú móvil (panel) -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-white md:hidden">
+      <div class="flex flex-col items-center justify-center h-full space-y-8">
+        <button
+          id="close-menu"
+          class="absolute top-4 right-4 text-gray-600 hover:text-gray-900"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+        <a
+          href="#inicio"
+          class="relative text-2xl text-gray-600 hover:text-gray-900 after:absolute after:block after:w-full after:h-[2px] after:bottom-0 after:left-0 after:bg-gray-900 after:scale-x-0 after:origin-right after:transition-transform hover:after:scale-x-100 hover:after:origin-left"
+          >Inicio</a
+        >
+        <a
+          href="#nuestros-servicios"
+          class="relative text-2xl text-gray-600 hover:text-gray-900 after:absolute after:block after:w-full after:h-[2px] after:bottom-0 after:left-0 after:bg-gray-900 after:scale-x-0 after:origin-right after:transition-transform hover:after:scale-x-100 hover:after:origin-left"
+          >Nuestros Servicios</a
+        >
+        <a
+          href="#opiniones"
+          class="relative text-2xl text-gray-600 hover:text-gray-900 after:absolute after:block after:w-full after:h-[2px] after:bottom-0 after:left-0 after:bg-gray-900 after:scale-x-0 after:origin-right after:transition-transform hover:after:scale-x-100 hover:after:origin-left"
+          >Opiniones</a
+        >
+        <a
+          href="#contacto"
+          class="relative text-2xl text-gray-600 hover:text-gray-900 after:absolute after:block after:w-full after:h-[2px] after:bottom-0 after:left-0 after:bg-gray-900 after:scale-x-0 after:origin-right after:transition-transform hover:after:scale-x-100 hover:after:origin-left"
+          >Contacto</a
+        >
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const closeMenu = document.getElementById("close-menu");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const mobileMenuLinks = mobileMenu?.querySelectorAll("a");
+
+  menuToggle?.addEventListener("click", () => {
+    mobileMenu?.classList.remove("hidden");
+  });
+
+  closeMenu?.addEventListener("click", () => {
+    mobileMenu?.classList.add("hidden");
+  });
+
+  mobileMenuLinks?.forEach((link) => {
+    link.addEventListener("click", () => {
+      mobileMenu?.classList.add("hidden");
+    });
+  });
+</script>
