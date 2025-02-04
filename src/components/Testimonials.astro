@@ -1,0 +1,37 @@
+---
+const testimonials = [
+  {
+    name: "María G.",
+    text: "La atención en 21 días ha sido excepcional. Me han ayudado a superar momentos muy difíciles con profesionalidad y cercanía.",
+    rating: 5
+  },
+  {
+    name: "Carlos P.",
+    text: "Gracias a la terapia he conseguido herramientas muy valiosas para gestionar mi ansiedad. Totalmente recomendable.",
+    rating: 5
+  },
+  {
+    name: "Laura S.",
+    text: "El ambiente acogedor y el trato personalizado hacen que te sientas comprendido desde el primer momento.",
+    rating: 5
+  }
+];
+---
+<section class="py-20 bg-purple-50" id="testimonios">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Lo que dicen nuestros pacientes</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {testimonials.map(testimonial => (
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <div class="flex justify-center mb-4">
+            {Array.from({ length: testimonial.rating }).map(() => (
+              <span class="text-yellow-400">★</span>
+            ))}
+          </div>
+          <p class="text-gray-600 mb-4 italic">"{testimonial.text}"</p>
+          <p class="text-gray-800 font-semibold text-right">- {testimonial.name}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
