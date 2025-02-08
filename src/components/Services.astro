@@ -1,57 +1,157 @@
 ---
-const services = [
-  {
-    title: "Terapia cognitivo-conductual",
-    description:
-      "Sesiones personalizadas adaptadas a tus necesidades específicas",
-    icon: "👤",
-  },
-  {
-    title: "Terapia de Pareja",
-    description: "Mejora tu relación y fortalece los vínculos afectivos",
-    icon: "💑",
-  },
-  {
-    title: "Terapia sistémica o familiar",
-    description: "Resuelve conflictos y mejora la comunicación familiar",
-    icon: "👨‍👩‍👧‍👦",
-  },
-  {
-    title: "Evaluación Diagnóstica",
-    description: "Diagnóstico de necesidades específicas",
-    icon: "🩺",
-  },
-  {
-    title: "Logopedia",
-    description: "Mejora la comunicación y el desarrollo de habilidades sociales",
-    icon: "🗣️",
-  },
-  {
-    title: "Pedagogía",
-    description: "Mejora la comunicación y el desarrollo de habilidades sociales",
-    icon: "🏫",
-  },
-];
----
 
+---
 
 <section class="py-20" id="nuestros-servicios">
   <div class="mx-auto">
     <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
       Nuestros <span class="text-primary-500">Servicios</span>
     </h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {
-        services.map((service) => (
-          <div class="bg-primary-100/40 p-6 rounded-lg text-center hover:shadow-lg transition-shadow">
-            <div class="text-4xl mb-4">{service.icon}</div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">
-              {service.title}
-            </h3>
-            <p class="text-gray-600">{service.description}</p>
-          </div>
-        ))
-      }
+    <div class="flex flex-wrap justify-center gap-8">
+      <div
+        class="border border-primary-300 p-6 rounded-lg text-center hover:shadow-lg transition-shadow flex-grow basis-full md:basis-[calc(33.333%-1.33rem)] lg:basis-[calc(25%-1.5rem)]"
+      >
+        <div class="text-4xl mb-4">🧠</div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">
+          Terapia cognitivo-conductual
+        </h3>
+        <p class="text-gray-600">
+          La Terapia Cognitivo-Conductual es un enfoque basado en la evidencia
+          científica que ayuda a identificar y modificar pensamientos, emociones
+          y conductas disfuncionales.
+        </p>
+        <p class="text-gray-600">
+          Se centra en el presente y en dotar al paciente de herramientas
+          prácticas para afrontar sus dificultades.
+        </p>
+        <span class="text-primary-600"
+          >Es eficaz para tratar ansiedad, depresión, estrés, fobias, trastornos
+          obsesivos, problemas de autoestima y muchas otras dificultades
+          emocionales y conductuales.</span
+        >
+      </div>
+
+      <div
+        class="border border-primary-300 p-6 rounded-lg text-center hover:shadow-lg transition-shadow flex-grow basis-full md:basis-[calc(33.333%-1.33rem)] lg:basis-[calc(25%-1.5rem)]"
+      >
+        <div class="text-4xl mb-4">👶</div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">
+          Psicología Infantil
+        </h3>
+        <p class="text-gray-600">
+          La terapia infantil está diseñada para ayudar a los niños a <span
+            class="text-primary-600"
+            >comprender y gestionar sus emociones, mejorar su conducta y
+            desarrollar habilidades</span
+          >
+          para afrontar diversas situaciones. A través de un enfoque adaptado a su
+          edad,<span class="text-primary-600">
+            utilizando el juego, la creatividad y la expresión emocional</span
+          >, trabajamos con dificultades como <span class="text-primary-600"
+            >ansiedad, miedos, baja autoestima, problemas de conducta,
+            dificultades sociales, duelo o cambios familiares (divorcio,
+            mudanzas, nuevos hermanos, etc.).</span
+          > También acompañamos a las familias en el proceso, brindando herramientas
+          para mejorar la comunicación y fortalecer el vínculo con sus hijos.
+        </p>
+      </div>
+
+      <div
+        class="border border-primary-300 p-6 rounded-lg text-center hover:shadow-lg transition-shadow flex-grow basis-full md:basis-[calc(33.333%-1.33rem)] lg:basis-[calc(25%-1.5rem)]"
+      >
+        <div class="text-4xl mb-4">💑</div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">
+          Terapia de Pareja
+        </h3>
+        <p class="text-gray-600">
+          La terapia de pareja está diseñada para <span class="text-primary-600"
+            >mejorar la comunicación, fortalecer el vínculo emocional y resolver
+            conflictos</span
+          > que puedan estar afectando la relación. A través de un espacio seguro
+          y guiado por un profesional, se trabajan aspectos como la confianza, la
+          gestión <span class="text-primary-600"
+            >emocional, la convivencia y la toma de decisiones en pareja.</span
+          > Ya sea para superar una crisis o simplemente mejorar la relación, este
+          tipo de terapia puede marcar la diferencia en el bienestar de ambos.
+        </p>
+      </div>
+
+      <div
+        class="border border-primary-300 p-6 rounded-lg text-center hover:shadow-lg transition-shadow flex-grow basis-full md:basis-[calc(33.333%-1.33rem)] lg:basis-[calc(25%-1.5rem)]"
+      >
+        <div class="text-4xl mb-4">👨‍👩‍👦‍👦</div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">
+          Terapia sistémica o familiar
+        </h3>
+        <p class="text-gray-600">
+          La terapia sistémica entiende los problemas individuales dentro del
+          contexto de sus <span class="text-primary-600">relaciones familiares y sociales.</span> Se trabaja con la
+          familia como un sistema interconectado, ayudando a mejorar la
+          comunicación, resolver conflictos y fortalecer los lazos familiares.
+          Es útil en situaciones como <span class="text-primary-600">crisis familiares, dificultades en la
+          crianza, conflictos intergeneracionales y problemas de convivencia.</span>
+        </p>
+      </div>
+
+      <div
+        class="border border-primary-300 p-6 rounded-lg text-center hover:shadow-lg transition-shadow flex-grow basis-full md:basis-[calc(33.333%-1.33rem)] lg:basis-[calc(25%-1.5rem)]"
+      >
+        <div class="text-4xl mb-4">📚</div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">
+          Evaluación Diagnóstica
+        </h3>
+        <p class="text-gray-600">
+          Realizamos evaluaciones psicológicas completas para niños,
+          adolescentes y adultos, abarcando dos áreas principales:
+        </p>
+        <ul class="list-disc list-inside text-gray-600">
+          <li>
+            Evaluación de trastornos psicológicos: <span class="text-primary-600">Ansiedad, depresión, TOC,
+            fobias, trastornos de la personalidad, entre otros.</span>
+          </li>
+          <li>
+            Evaluación de trastornos del neurodesarrollo: <span class="text-primary-600">Autismo, TDAH,
+            dislexia, discapacidad intelectual, problemas de aprendizaje y otras
+            condiciones que afectan el desarrollo neuropsicológico.</span>
+          </li>
+        </ul>
+        <p class="text-gray-600">
+          Tras la evaluación, elaboramos un informe psicológico detallado con
+          los resultados de las pruebas, un diagnóstico preciso y
+          recomendaciones para la intervención o tratamiento más adecuado.
+        </p>
+      </div>
+
+      <div
+        class="border border-primary-300 p-6 rounded-lg text-center hover:shadow-lg transition-shadow flex-grow basis-full md:basis-[calc(33.333%-1.33rem)] lg:basis-[calc(25%-1.5rem)]"
+      >
+        <div class="text-4xl mb-4">🗣️</div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Logopedia</h3>
+        <p class="text-gray-600">
+          El servicio de logopedia está dirigido a niños y adultos que presentan
+          <span class="text-primary-600">dificultades en el habla, el lenguaje, la voz o la comunicación.</span>
+          Trabajamos problemas como <span class="text-primary-600">dislalias, tartamudez, afasias, trastornos
+          del lenguaje en el neurodesarrollo y dificultades en la deglución.</span> A
+          través de técnicas especializadas, ayudamos a mejorar la comunicación
+          y la calidad de vida de nuestros pacientes.
+        </p>
+      </div>
+
+      <div
+        class="border border-primary-300 p-6 rounded-lg text-center hover:shadow-lg transition-shadow flex-grow basis-full md:basis-[calc(33.333%-1.33rem)] lg:basis-[calc(25%-1.5rem)]"
+      >
+        <div class="text-4xl mb-4">🏫</div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Pedagogía</h3>
+        <p class="text-gray-600">
+          Nuestro equipo de pedagogía ofrece apoyo a niños y adolescentes con
+          dificultades en el aprendizaje, adaptando estrategias a sus
+          <span class="text-primary-600">necesidades individuales.</span> Abordamos problemas como <span class="text-primary-600">dislexia,
+          discalculia, déficit de atención y estrategias de estudio,</span> con el
+          objetivo de potenciar su desarrollo académico y personal. También
+          brindamos orientación a familias y profesores para mejorar la
+          integración escolar del niño.
+        </p>
+      </div>
     </div>
   </div>
 </section>
