@@ -108,13 +108,14 @@ import WhatsappIcon from "../svgs/Whatsapp-icon.astro";
 
 
 
-            <div class="flex items-center space-x-4 text-gray-600">
+            <div class="flex items-start space-x-4 text-gray-600 flex-row">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
+
               >
                 <path
                   stroke-linecap="round"
@@ -122,9 +123,15 @@ import WhatsappIcon from "../svgs/Whatsapp-icon.astro";
                   stroke-width="2"
                   d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
-              <span>Lunes a Viernes: 9:00 - 20:00</span>
+              <div class="flex flex-col">
+                <span><strong>Mañanas</strong> Martes y Jueves 9:30 - 14:00</span>
+                <span><strong>Tardes</strong> de Lunes a Viernes 16:00 - 21:00</span>
+              </div>
             </div>
+
           </div>
+
+
         </div>
 
         <div class="hidden md:block">

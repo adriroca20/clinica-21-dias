@@ -10,7 +10,7 @@ export default {
           200: '#ffe799',
           300: '#ffdb66',
           400: '#ffcf33',
-          500: '#ffc300', // Color principal
+          500: '#00d4bf', // Color principal
           600: '#cc9c00',
           700: '#997500',
           800: '#664e00',
