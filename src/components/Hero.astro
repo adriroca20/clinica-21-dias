@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 
 ---
 
@@ -22,10 +24,12 @@
         </a>
       </div>
       <div class="relative">
-        <img
-          src="/svg/gente.svg"
+        <Image
+          width={450}
+          height={450}
+          src="/svg/familia.svg"
           alt="Ilustración de bienestar emocional"
-          class="w-full h-auto max-w-lg mx-auto"
+          class="mx-auto"
         />
       </div>
     </div>

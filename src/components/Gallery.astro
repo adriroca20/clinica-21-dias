@@ -1,0 +1,58 @@
+---
+import { Image } from "astro:assets";
+
+const images = [
+  {
+    src: "/clinica/2.jpeg",
+    alt: "Sala de terapia principal",
+    title: "Espacio de terapia grupal",
+  },
+  {
+    src: "/clinica/3.jpeg",
+    alt: "Sala de espera",
+    title: "Área de recepción",
+  },
+  {
+    src: "/clinica/1.jpeg",
+    alt: "Consultorio individual",
+    title: "Sala de terapia individual",
+  },
+  {
+    src: "/clinica/4.jpeg",
+    alt: "Área de terapia grupal",
+    title: "Entrada principal",
+  },
+];
+---
+
+<section class="py-20 bg-gray-50" id="nuestras-instalaciones">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
+      Nuestras <span class="text-primary-500">Instalaciones</span>
+    </h2>
+    <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+      Conoce nuestros espacios diseñados para brindarte la mayor comodidad y
+      privacidad durante tu proceso terapéutico.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      {
+        images.map((image) => (
+          <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+            <Image
+              height={300}
+              width={300}
+              src={image.src}
+              alt={image.alt}
+              class="object-cover w-full"
+            />
+            <div class="absolute bottom-[-100px] left-0 right-0 bg-black bg-opacity-50 text-white p-4 transition-all duration-300 ease-in-out group-hover:bottom-0">
+              <h3 class="text-lg font-semibold">{image.title}</h3>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
