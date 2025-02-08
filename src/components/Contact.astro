@@ -1,7 +1,8 @@
 ---
 import InstagramIcon from "../svgs/instagram-icon.astro";
 import WhatsappIcon from "../svgs/Whatsapp-icon.astro";
-
+const whatsappNumber = "+34640205738"; // Reemplaza con tu número de WhatsApp
+const whatsappMessage = "Hola! Me gustaría obtener más información sobre vuestras terapias";
 ---
 
 <section class="py-20" id="contacto">
@@ -66,7 +67,7 @@ import WhatsappIcon from "../svgs/Whatsapp-icon.astro";
             </a>
 
             <a
-              href="https://wa.me/34640205738"
+              href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`}
               target="_blank"
               rel="noopener noreferrer"
               class="flex items-center space-x-4 text-gray-600 hover:text-primary-500 transition-colors"
