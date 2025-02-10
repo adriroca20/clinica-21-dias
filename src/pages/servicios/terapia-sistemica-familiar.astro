@@ -1,29 +1,39 @@
 ---
 import ServiceLayout from '../../layouts/ServiceLayout.astro';
+import {Image} from 'astro:assets';
 ---
 
+
 <ServiceLayout title="Terapia Sistémica Familiar" service="Terapia Sistémica Familiar">
-  <h2 class="text-2xl font-semibold text-gray-800 mb-4">¿Qué es la Terapia Sistémica Familiar?</h2>
-  <p class="mb-4">
-    La terapia sistémica familiar es un enfoque que considera a la familia como un sistema interconectado, donde los problemas y soluciones se abordan desde una perspectiva colectiva.
-  </p>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mb-4">¿Cuándo es necesaria?</h2>
-  <ul class="list-disc pl-6 mb-4">
-    <li>Conflictos familiares recurrentes</li>
-    <li>Problemas de comunicación</li>
-    <li>Crisis familiares</li>
-    <li>Dificultades en la crianza</li>
-    <li>Cambios importantes en la familia</li>
-    <li>Problemas de comportamiento en niños o adolescentes</li>
-  </ul>
-
-  <h2 class="text-2xl font-semibold text-gray-800 mb-4">Objetivos de la terapia</h2>
-  <ul class="list-disc pl-6 mb-4">
-    <li>Mejorar la comunicación familiar</li>
-    <li>Fortalecer vínculos afectivos</li>
-    <li>Resolver conflictos de manera constructiva</li>
-    <li>Establecer límites saludables</li>
-    <li>Adaptarse a cambios familiares</li>
-  </ul>
+  <div class="w-full md:w-1/2">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">¿Qué es la Terapia Sistémica Familiar?</h2>
+    <p class="mb-4">
+      La terapia sistémica entiende los problemas individuales dentro del contexto de sus relaciones familiares y sociales. Se trabaja con la familia como un sistema interconectado, ayudando a mejorar la comunicación, resolver conflictos y fortalecer los lazos familiares. Es útil en situaciones como crisis familiares, dificultades en la crianza, conflictos intergeneracionales y problemas de convivencia.
+    </p>
+  
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">¿Cuándo es necesaria?</h2>
+    <ul class="list-disc pl-6 mb-4">
+      <li>Conflictos familiares recurrentes</li>
+      <li>Problemas de comunicación</li>
+      <li>Crisis familiares</li>
+      <li>Dificultades en la crianza</li>
+      <li>Cambios importantes en la familia</li>
+      <li>Problemas de comportamiento en niños o adolescentes</li>
+    </ul>
+  
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Objetivos de la terapia</h2>
+    <ul class="list-disc pl-6 mb-4">
+      <li>Mejorar la comunicación familiar</li>
+      <li>Fortalecer vínculos afectivos</li>
+      <li>Resolver conflictos de manera constructiva</li>
+      <li>Establecer límites saludables</li>
+      <li>Adaptarse a cambios familiares</li>
+    </ul>
+  </div>
+  <Image
+    height={500}
+    width={500}
+    src="/svg/familia.svg"
+    alt="Terapia de Pareja"
+  />
 </ServiceLayout> 

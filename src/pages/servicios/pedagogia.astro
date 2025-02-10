@@ -1,48 +1,63 @@
 ---
-import ServiceLayout from '../../layouts/ServiceLayout.astro';
+import ServiceLayout from "../../layouts/ServiceLayout.astro";
+import { Image } from "astro:assets";
 ---
 
 <ServiceLayout title="Pedagogía" service="Pedagogía">
-  <h2 class="text-2xl font-semibold text-gray-800 mb-4">¿Qué es la Pedagogía?</h2>
-  <p class="mb-4">
-    La pedagogía es la ciencia que estudia la metodología y las técnicas que se aplican a la enseñanza y la educación, especialmente la infantil. Nuestro servicio se centra en proporcionar apoyo especializado para optimizar el proceso de aprendizaje.
-  </p>
+  <div class="w-full md:w-1/2">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+      ¿Qué podemos ofrecer?
+    </h2>
+    <p class="mb-4">
+      Nuestro equipo de pedagogía ofrece apoyo a niños y adolescentes con
+      dificultades en el aprendizaje, adaptando estrategias a sus necesidades
+      individuales.
+    </p>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mb-4">Áreas de intervención</h2>
-  <ul class="list-disc pl-6 mb-4">
-    <li>Dificultades de aprendizaje específicas:
-      <ul class="list-disc pl-6 mt-2">
-        <li>Dislexia</li>
-        <li>Discalculia</li>
-        <li>Disgrafía</li>
-        <li>Problemas de comprensión lectora</li>
-      </ul>
-    </li>
-    <li>Técnicas y hábitos de estudio</li>
-    <li>Motivación y autoestima académica</li>
-    <li>Adaptaciones curriculares</li>
-  </ul>
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+      Áreas de intervención
+    </h2>
+    <ul class="list-disc pl-6 mb-4">
+      <li>
+        Dificultades de aprendizaje específicas:
+        <ul class="list-disc pl-6 mt-2">
+          <li>Dislexia</li>
+          <li>Discalculia</li>
+          <li>Disgrafía</li>
+          <li>Problemas de comprensión lectora</li>
+        </ul>
+      </li>
+      <li>Técnicas y hábitos de estudio</li>
+      <li>Motivación y autoestima académica</li>
+      <li>Adaptaciones curriculares</li>
+    </ul>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mb-4">Nuestros servicios</h2>
-  <ul class="list-disc pl-6 mb-4">
-    <li>Evaluación psicopedagógica</li>
-    <li>Programas de intervención personalizados</li>
-    <li>Asesoramiento a familias y docentes</li>
-    <li>Seguimiento del progreso académico</li>
-    <li>Orientación educativa</li>
-  </ul>
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+      Nuestros servicios
+    </h2>
+    <ul class="list-disc pl-6 mb-4">
+      <li>Evaluación psicopedagógica</li>
+      <li>Programas de intervención personalizados</li>
+      <li>Asesoramiento a familias y docentes</li>
+      <li>Seguimiento del progreso académico</li>
+      <li>Orientación educativa</li>
+    </ul>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mb-4">Metodología</h2>
-  <p class="mb-4">
-    Trabajamos de forma individualizada, adaptando las estrategias a las necesidades específicas de cada estudiante. Utilizamos métodos innovadores y recursos didácticos variados para mantener la motivación y asegurar un aprendizaje efectivo.
-  </p>
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Metodología</h2>
+    <p class="mb-4">
+      Trabajamos de forma individualizada, adaptando las estrategias a las
+      necesidades específicas de cada estudiante. Utilizamos métodos innovadores
+      y recursos didácticos variados para mantener la motivación y asegurar un
+      aprendizaje efectivo.
+    </p>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mb-4">Beneficios</h2>
-  <ul class="list-disc pl-6 mb-4">
-    <li>Mejora del rendimiento académico</li>
-    <li>Desarrollo de la autonomía en el estudio</li>
-    <li>Aumento de la motivación</li>
-    <li>Fortalecimiento de la autoestima</li>
-    <li>Adquisición de estrategias de aprendizaje efectivas</li>
-  </ul>
-</ServiceLayout> 
+  </div>
+  <Image
+    height={500}
+    width={500}
+    src="/svg/kids.svg"
+    alt="Pedagogía"
+    class="object-cover w-1/2"
+  />
+</ServiceLayout>
+

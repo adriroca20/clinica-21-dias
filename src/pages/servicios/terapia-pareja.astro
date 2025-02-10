@@ -1,30 +1,51 @@
 ---
-import ServiceLayout from '../../layouts/ServiceLayout.astro';
+import ServiceLayout from "../../layouts/ServiceLayout.astro";
+import { Image } from "astro:assets";
 ---
 
 <ServiceLayout title="Terapia de Pareja" service="Terapia de Pareja">
-  <h2 class="text-2xl font-semibold text-gray-800 mb-4">¿Qué es la Terapia de Pareja?</h2>
-  <p class="mb-4">
-    La terapia de pareja es un espacio seguro donde las parejas pueden trabajar en sus dificultades y fortalecer su relación con la ayuda de un profesional especializado.
-  </p>
+  <div class="w-full md:w-1/2">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+      ¿Qué es la Terapia de Pareja?
+    </h2>
+    <p class="mb-4">
+      La terapia de pareja está diseñada para mejorar la comunicación,
+      fortalecer el vínculo emocional y resolver conflictos que puedan estar
+      afectando la relación. A través de un espacio seguro y guiado por un
+      profesional, se trabajan aspectos como la confianza, la gestión emocional,
+      la convivencia y la toma de decisiones en pareja. Ya sea para superar una
+      crisis o simplemente mejorar la relación, este tipo de terapia puede
+      marcar la diferencia en el bienestar de ambos.
+    </p>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mb-4">¿Cuándo buscar ayuda?</h2>
-  <ul class="list-disc pl-6 mb-4">
-    <li>Problemas de comunicación</li>
-    <li>Conflictos recurrentes</li>
-    <li>Infidelidad</li>
-    <li>Crisis de pareja</li>
-    <li>Problemas de intimidad</li>
-    <li>Dificultades en la convivencia</li>
-    <li>Decisiones importantes de pareja</li>
-  </ul>
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+      ¿Cuándo buscar ayuda?
+    </h2>
+    <ul class="list-disc pl-6 mb-4">
+      <li>Problemas de comunicación</li>
+      <li>Conflictos recurrentes</li>
+      <li>Infidelidad</li>
+      <li>Crisis de pareja</li>
+      <li>Problemas de intimidad</li>
+      <li>Dificultades en la convivencia</li>
+      <li>Decisiones importantes de pareja</li>
+    </ul>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mb-4">Beneficios</h2>
-  <ul class="list-disc pl-6 mb-4">
-    <li>Mejor comunicación</li>
-    <li>Mayor comprensión mutua</li>
-    <li>Resolución efectiva de conflictos</li>
-    <li>Fortalecimiento del vínculo emocional</li>
-    <li>Recuperación de la confianza</li>
-  </ul>
-</ServiceLayout> 
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">Beneficios</h2>
+    <ul class="list-disc pl-6 mb-4">
+      <li>Mejor comunicación</li>
+      <li>Mayor comprensión mutua</li>
+      <li>Resolución efectiva de conflictos</li>
+      <li>Fortalecimiento del vínculo emocional</li>
+      <li>Recuperación de la confianza</li>
+    </ul>
+  </div>
+  <Image
+    height={500}
+    width={500}
+    src="/svg/pareja2.svg"
+    alt="Terapia de Pareja"
+    class="object-cover w-1/2"
+  />
+</ServiceLayout>
+

@@ -1,20 +1,35 @@
 ---
-import Layout from '../../layouts/ServiceLayout.astro';
+import Layout from "../../layouts/ServiceLayout.astro";
+import {Image} from "astro:assets";
 ---
 
-<Layout service="Terapia Cognitivo-Conductual" title="Terapia Cognitivo-Conductual | Centro de Psicología">
-    <div class="prose max-w-none">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">¿Qué es la Terapia Cognitivo-Conductual?</h2>
+<Layout
+  service="Terapia Cognitivo-Conductual"
+  title="Terapia Cognitivo-Conductual | Centro de Psicología"
+>
+    <div class="w-full md:w-1/2">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        ¿Qué es la Terapia Cognitivo-Conductual?
+      </h2>
+
+
       <p class="mb-4">
-        La Terapia Cognitivo-Conductual es un enfoque basado en la evidencia científica que ayuda a identificar y modificar pensamientos, emociones y conductas disfuncionales.
+        La Terapia Cognitivo-Conductual es un enfoque basado en la evidencia
+        científica que ayuda a identificar y modificar pensamientos, emociones y
+        conductas disfuncionales.
       </p>
 
       <h2 class="text-2xl font-semibold text-gray-800 mb-4">¿Cómo funciona?</h2>
       <p class="mb-4">
-        Se centra en el presente y en dotar al paciente de herramientas prácticas para afrontar sus dificultades. El terapeuta trabaja en colaboración con el paciente para identificar patrones de pensamiento negativos y desarrollar estrategias de afrontamiento más adaptativas.
+        Se centra en el presente y en dotar al paciente de herramientas
+        prácticas para afrontar sus dificultades. El terapeuta trabaja en
+        colaboración con el paciente para identificar patrones de pensamiento
+        negativos y desarrollar estrategias de afrontamiento más adaptativas.
       </p>
 
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">¿Para qué problemas es efectiva?</h2>
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        ¿Para qué problemas es efectiva?
+      </h2>
       <ul class="list-disc pl-6 mb-4">
         <li>Ansiedad</li>
         <li>Depresión</li>
@@ -25,4 +40,12 @@ import Layout from '../../layouts/ServiceLayout.astro';
         <li>Otras dificultades emocionales y conductuales</li>
       </ul>
     </div>
-</Layout> 
+    <Image
+      height={200}
+      width={200}
+      class="object-cover w-1/2 max-w-80"
+      src="/svg/corazon.svg"
+      alt="Terapia Cognitivo-Conductual"
+    />
+</Layout>
+

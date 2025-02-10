@@ -1,99 +1,72 @@
 ---
+import ServiceCard from './ServiceCard.astro';
 
+const services = [
+  {
+    emoji: "🧠",
+    title: "Terapia cognitivo-conductual",
+    description: "Enfoque terapéutico basado en evidencia científica que ayuda a identificar y modificar pensamientos, emociones y conductas disfuncionales.",
+    url: "/servicios/terapia-cognitivo-conductual"
+  },
+  {
+    emoji: "👶",
+    title: "Psicología Infantil",
+    description: "Terapia especializada para niños que les ayuda a comprender y gestionar sus emociones, mejorar su conducta y desarrollar habilidades sociales.",
+    url: "/servicios/psicologia-infantil"
+  },
+  {
+    emoji: "💑",
+    title: "Terapia de Pareja",
+    description: "Espacio seguro para mejorar la comunicación, fortalecer el vínculo emocional y resolver conflictos en la relación.",
+    url: "/servicios/terapia-pareja"
+  },
+  {
+    emoji: "👨‍👩‍👦‍👦",
+    title: "Terapia sistémica o familiar",
+    description: "Abordaje terapéutico que trabaja con la familia como sistema para mejorar la comunicación y resolver conflictos.",
+    url: "/servicios/terapia-sistemica-familiar"
+  },
+  {
+    emoji: "📚",
+    title: "Evaluación Diagnóstica",
+    description: "Evaluaciones psicológicas completas para niños, adolescentes y adultos, incluyendo trastornos psicológicos y del neurodesarrollo.",
+    url: "/servicios/evaluacion-diagnostica"
+  },
+  {
+    emoji: "🗣️",
+    title: "Logopedia",
+    description: "Tratamiento especializado para dificultades en el habla, el lenguaje, la voz y la comunicación.",
+    url: "/servicios/logopedia"
+  },
+  {
+    emoji: "🏫",
+    title: "Pedagogía",
+    description: "Apoyo especializado para niños y adolescentes con dificultades en el aprendizaje y necesidades educativas especiales.",
+    url: "/servicios/pedagogia"
+  }
+];
 ---
 
 <section class="py-20" id="nuestros-servicios">
   <div class="mx-auto">
-    <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
-      Nuestros <span class="text-primary-500">Servicios</span>
+    <h2 class="text-4xl font-bold text-center mb-12">
+      Nuestros{" "}
+      <span class="bg-gradient-to-r from-primary-600 to-primary-400 bg-clip-text text-transparent relative">
+        Servicios
+        <span class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-primary-600 to-primary-400 rounded-full"></span>
+      </span>
     </h2>
     <div class="flex flex-wrap justify-center gap-8">
-      <a
-        href="/servicios/terapia-cognitivo-conductual"
-        class="border border-primary-300 p-6 rounded-lg text-center hover:shadow-lg transition-shadow flex-grow basis-full md:basis-[calc(33.333%-1.33rem)] lg:basis-[calc(25%-1.5rem)] cursor-pointer"
-      >
-        <div class="text-4xl mb-4">🧠</div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-3">
-          Terapia cognitivo-conductual
-        </h3>
-        <p class="text-gray-600">
-          Enfoque terapéutico basado en evidencia científica que ayuda a identificar y modificar pensamientos, emociones y conductas disfuncionales.
-        </p>
-      </a>
-
-      <a
-        href="/servicios/psicologia-infantil"
-        class="border border-primary-300 p-6 rounded-lg text-center hover:shadow-lg transition-shadow flex-grow basis-full md:basis-[calc(33.333%-1.33rem)] lg:basis-[calc(25%-1.5rem)] cursor-pointer"
-      >
-        <div class="text-4xl mb-4">👶</div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-3">
-          Psicología Infantil
-        </h3>
-        <p class="text-gray-600">
-          Terapia especializada para niños que les ayuda a comprender y gestionar sus emociones, mejorar su conducta y desarrollar habilidades sociales.
-        </p>
-      </a>
-
-      <a
-        href="/servicios/terapia-pareja"
-        class="border border-primary-300 p-6 rounded-lg text-center hover:shadow-lg transition-shadow flex-grow basis-full md:basis-[calc(33.333%-1.33rem)] lg:basis-[calc(25%-1.5rem)] cursor-pointer"
-      >
-        <div class="text-4xl mb-4">💑</div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-3">
-          Terapia de Pareja
-        </h3>
-        <p class="text-gray-600">
-          Espacio seguro para mejorar la comunicación, fortalecer el vínculo emocional y resolver conflictos en la relación.
-        </p>
-      </a>
-
-      <a
-        href="/servicios/terapia-sistemica-familiar"
-        class="border border-primary-300 p-6 rounded-lg text-center hover:shadow-lg transition-shadow flex-grow basis-full md:basis-[calc(33.333%-1.33rem)] lg:basis-[calc(25%-1.5rem)] cursor-pointer"
-      >
-        <div class="text-4xl mb-4">👨‍👩‍👦‍👦</div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-3">
-          Terapia sistémica o familiar
-        </h3>
-        <p class="text-gray-600">
-          Abordaje terapéutico que trabaja con la familia como sistema para mejorar la comunicación y resolver conflictos.
-        </p>
-      </a>
-
-      <a
-        href="/servicios/evaluacion-diagnostica"
-        class="border border-primary-300 p-6 rounded-lg text-center hover:shadow-lg transition-shadow flex-grow basis-full md:basis-[calc(33.333%-1.33rem)] lg:basis-[calc(25%-1.5rem)] cursor-pointer"
-      >
-        <div class="text-4xl mb-4">📚</div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-3">
-          Evaluación Diagnóstica
-        </h3>
-        <p class="text-gray-600">
-          Evaluaciones psicológicas completas para niños, adolescentes y adultos, incluyendo trastornos psicológicos y del neurodesarrollo.
-        </p>
-      </a>
-
-      <a
-        href="/servicios/logopedia"
-        class="border border-primary-300 p-6 rounded-lg text-center hover:shadow-lg transition-shadow flex-grow basis-full md:basis-[calc(33.333%-1.33rem)] lg:basis-[calc(25%-1.5rem)] cursor-pointer"
-      >
-        <div class="text-4xl mb-4">🗣️</div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-3">Logopedia</h3>
-        <p class="text-gray-600">
-          Tratamiento especializado para dificultades en el habla, el lenguaje, la voz y la comunicación.
-        </p>
-      </a>
-
-      <a
-        href="/servicios/pedagogia"
-        class="border border-primary-300 p-6 rounded-lg text-center hover:shadow-lg transition-shadow flex-grow basis-full md:basis-[calc(33.333%-1.33rem)] lg:basis-[calc(25%-1.5rem)] cursor-pointer"
-      >
-        <div class="text-4xl mb-4">🏫</div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-3">Pedagogía</h3>
-        <p class="text-gray-600">
-          Apoyo especializado para niños y adolescentes con dificultades en el aprendizaje y necesidades educativas especiales.
-        </p>
-      </a>
+      {
+        services.map((service) => (
+          <ServiceCard
+            emoji={service.emoji}
+            title={service.title}
+            description={service.description}
+            url={service.url}
+          />
+        ))
+      }
     </div>
   </div>
 </section>

@@ -1,26 +1,46 @@
 ---
-import ServiceLayout from '../../layouts/ServiceLayout.astro';
+import ServiceLayout from "../../layouts/ServiceLayout.astro";
+import { Image } from "astro:assets";
 ---
 
 <ServiceLayout title="Psicología Infantil" service="Psicología Infantil">
-  <h2 class="text-2xl font-semibold text-gray-800 mb-4">¿Qué es la Psicología Infantil?</h2>
-  <p class="mb-4">
-    La psicología infantil es una rama especializada que se centra en el desarrollo emocional, social y cognitivo de los niños, ayudándoles a superar dificultades y potenciar su bienestar.
-  </p>
+  <div class="w-full md:w-1/2">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+      ¿Qué es la Psicología Infantil?
+    </h2>
+    <p class="mb-4">
+      La psicología infantil es una rama especializada que se centra en el
+      desarrollo emocional, social y cognitivo de los niños, ayudándoles a
+      superar dificultades y potenciar su bienestar.
+    </p>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mb-4">¿Cómo trabajamos?</h2>
-  <p class="mb-4">
-    Utilizamos técnicas adaptadas a la edad del niño, incluyendo el juego, el arte y actividades creativas. Trabajamos en estrecha colaboración con las familias para crear un entorno de apoyo integral.
-  </p>
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">¿Cómo trabajamos?</h2>
+    <p class="mb-4">
+      Utilizamos técnicas adaptadas a la edad del niño, incluyendo el juego, el
+      arte y actividades creativas. Trabajamos en estrecha colaboración con las
+      familias para crear un entorno de apoyo integral.
+    </p>
 
-  <h2 class="text-2xl font-semibold text-gray-800 mb-4">Áreas de intervención</h2>
-  <ul class="list-disc pl-6 mb-4">
-    <li>Ansiedad y miedos infantiles</li>
-    <li>Problemas de conducta</li>
-    <li>Dificultades de aprendizaje</li>
-    <li>Habilidades sociales</li>
-    <li>Autoestima</li>
-    <li>Gestión emocional</li>
-    <li>Adaptación a cambios familiares</li>
-  </ul>
-</ServiceLayout> 
+    <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+      Áreas de intervención
+    </h2>
+    <ul class="list-disc pl-6 mb-4">
+      <li>Ansiedad y miedos infantiles</li>
+      <li>Problemas de conducta</li>
+      <li>Dificultades de aprendizaje</li>
+      <li>Habilidades sociales</li>
+      <li>Autoestima</li>
+      <li>Gestión emocional</li>
+      <li>Adaptación a cambios familiares</li>
+    </ul>
+  </div>
+  <Image
+    height={500}
+    width={500}
+    src="/svg/kids.svg"
+    class="object-cover w-1/2"
+    alt="Psicología Infantil"
+  />
+</ServiceLayout>
+
+

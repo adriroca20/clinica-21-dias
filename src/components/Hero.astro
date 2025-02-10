@@ -8,20 +8,21 @@ import { Image } from "astro:assets";
   <div class="mx-auto">
     <div class="grid md:grid-cols-2 gap-12 items-center">
       <div class="text-left">
-        <h1 class="text-5xl md:text-6xl font-bold text-secondary-800 mb-6 leading-tight">
+        <h1 class="text-5xl text-center md:text-left md:text-6xl font-bold text-secondary-800 mb-6 leading-tight">
           Clínica 21 Días Psicoeducación
         </h1>
-        <p class="text-xl text-secondary-500 mb-10 leading-relaxed max-w-xl">
+        <p class="text-xl text-center md:text-left text-secondary-500 mb-10 leading-relaxed max-w-xl">
           Tu bienestar emocional es nuestra prioridad. Descubre un espacio seguro
           donde encontrarás apoyo profesional y comprensión para tu desarrollo
           personal.
         </p>
         <a
           href="#contacto"
-          class="inline-block text-white bg-primary-500 px-8 py-4 rounded-full text-lg font-semibold hover:bg-primary-600 transition-colors shadow-md"
+          class="inline-block w-full text-center md:text-left md:w-fit text-white bg-primary-500 px-8 py-4 rounded-full text-lg font-semibold hover:bg-primary-600 transition-colors shadow-md"
         >
           Pide tu cita
         </a>
+
       </div>
       <div class="relative">
         <Image
@@ -29,7 +30,7 @@ import { Image } from "astro:assets";
           height={450}
           src="/svg/familia.svg"
           alt="Ilustración de bienestar emocional"
-          class="mx-auto"
+          class="mx-auto w-1/2 md:w-1/2"
         />
       </div>
     </div>
