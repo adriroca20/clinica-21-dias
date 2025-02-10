@@ -1,0 +1,31 @@
+---
+import Layout from './Layout.astro';
+
+interface Props {
+  title: string;
+  service: string;
+}
+
+const { title, service } = Astro.props;
+---
+<Layout title={`${service} | Centro de Psicología`}>
+  <main class="container mx-auto px-4 pt-12 flex flex-col items-center justify-center mt-16">
+    <h1 class="text-4xl font-bold text-gray-800 mb-8">{service}</h1>
+    <div class="prose max-w-none">
+      <slot />
+
+      <div class="bg-primary-50 p-6 rounded-lg mt-8">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">¿Necesitas ayuda?</h2>
+        <p class="mb-4">
+          Contacta con nosotros para programar una consulta inicial y comenzar tu proceso terapéutico.
+        </p>
+        <a
+          href="/contacto"
+          class="inline-block bg-primary-500 text-white px-6 py-2 rounded-lg hover:bg-primary-600 transition-colors"
+        >
+          Contactar
+        </a>
+      </div>
+    </div>
+  </main>
+</Layout> 
