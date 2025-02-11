@@ -8,10 +8,10 @@ export default {
           50: '#e6fdfb',  // Muy claro, casi blanco
           100: '#ccfbf7',
           200: '#99f7ef',
-          300: '#66f3e7',
-          400: '#33efdf',
-          500: '#00d4bf', // Color principal
-          600: '#00aa99',
+          300: '#01598b',
+          400: '#034b70',
+          500: '#007494', // Color principal
+          600: '#034b70',
           700: '#007f73',
           800: '#00554c',
           900: '#002a26',
